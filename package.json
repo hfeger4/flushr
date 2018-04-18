@@ -12,7 +12,7 @@
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "redux": "^4.0.0",
-    "webpack": "^4.6.0"
+    "webpack": "^3.11.0"
   },
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
   "version": "1.0.0",
@@ -21,7 +21,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -33,5 +34,8 @@
   "bugs": {
     "url": "https://github.com/hfeger4/flushr/issues"
   },
-  "homepage": "https://github.com/hfeger4/flushr#readme"
+  "homepage": "https://github.com/hfeger4/flushr#readme",
+  "devDependencies": {
+    "webpack-cli": "^2.0.14"
+  }
 }
