@@ -11,7 +11,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 const App = () => (
   <div>
-    <h1>Hello there</h1>
+    <h1>Hello there, Flushr</h1>
   </div>
 );
 
