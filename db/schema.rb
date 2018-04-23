@@ -16,11 +16,18 @@ ActiveRecord::Schema.define(version: 20180420223943) do
   enable_extension "plpgsql"
 
   create_table "bathrooms", force: :cascade do |t|
+    t.string "location", null: false
+    t.string "description"
+    t.string "image_url"
+    t.integer "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "reviews", force: :cascade do |t|
+    t.text "body", null: false
+    t.integer "user_id", null: false
+    t.integer "bathroom_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
