@@ -7,6 +7,7 @@ class Api::ReviewsController < ApplicationController
   end
   def create
     @review = Review.new()
+    @review.save
   end
 
   private
