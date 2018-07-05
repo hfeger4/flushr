@@ -14,5 +14,7 @@ Rails.application.routes.draw do
     resources :bathrooms do
       resources :reviews, only:[:index]
     end
+
+    resources :reviews
   end
 end
