@@ -3,6 +3,8 @@ class Api::ReviewsController < ApplicationController
     if params[:bathroom]
       @reviews = Bathroom.find(params[:bathroom_id]).reviews
       render :index
+    else
+      @reviews = Review.all
     end
   end
   def create
